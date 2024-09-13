@@ -100,6 +100,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 image: AssetImage("assets/images/logo.png"),
                 fit: BoxFit.fill,
               )
+              // child: Text('HUREE DESIGN', style: TextStyle(fontWeight: FontWeight.w500, fontSize: size.width / 25),)
             )
           ),
           Positioned(

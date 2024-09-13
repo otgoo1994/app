@@ -52,6 +52,8 @@ class _SignInPageState extends State<SignInPage> {
     if (data.result == 'success') {
       final prefs = await SharedPreferences.getInstance();
       await prefs.setString('token', _controllers['kioskId'].text);
+      prefs.setString('poweron', data.id?['poweron']);
+      prefs.setString('poweroff', data.id?['poweroff']);
 
       dialog.alert(
         context, 

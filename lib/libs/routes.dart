@@ -3,6 +3,7 @@ import 'package:shared_preferences/shared_preferences.dart';
 import '../main.dart';
 import '../authentication/signin.dart';
 import '../community/newsFeed.dart';
+import '../community/Sleep.dart';
 
 class Routes {
   Map<String, Widget Function(BuildContext)> getRoutes(BuildContext context) {
@@ -10,6 +11,7 @@ class Routes {
       '/'                   : (context) => const MyHomePage(),
       'signin'              : (context) => const SignInPage(),
       'slide'               : (context) => const NewsfeedPage(),
+      'sleep'               : (context) => const Sleep(),
     };
   }
 
